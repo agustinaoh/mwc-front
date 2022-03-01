@@ -10,7 +10,7 @@ export const GlobalFilter = ({ filter, setFilter }) => {
   }, 500); //delays the search
 
   return (
-    <div className="p-2 border-2 border-teal-dark">
+    <div className="p-2 border-2 border-teal-dark w-1/3">
       <span>
         <GoSearch className="inline" />
         <input
