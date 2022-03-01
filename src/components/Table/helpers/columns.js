@@ -19,20 +19,35 @@ export const COLUMNS_COMPANIES = [
 
 export const COLUMNS_DATA = [
   {
-    Header: "Company",
-    accessor: "name",
+    Header: "Date",
+    accessor: "Date",
   },
   {
-    Header: "Website",
-    accessor: "website",
+    Header: "Origin Country",
+    accessor: "Origin_Country",
   },
   {
-    Header: "Total Seats",
-    accessor: "totalSeats",
+    Header: "Origin Continent",
+    accessor: "Origin_Continent",
+  },
+  {
+    Header: "Destination Country",
+    accessor: "Destination_Country",
+  },
+  {
+    Header: "Destination Continent",
+    accessor: "Destination_Continent",
   },
   {
     Header: "Total Flights",
-    accessor: "totalFlights",
+    accessor: "Total_flights",
+  },
+  {
+    Header: "Total Seats",
+    accessor: "Total_seats",
+  },
+  {
+    Header: "Total ASKs",
+    accessor: "Total_ASKs",
   },
 ];
-// company, date, originCountry, originContinent, destinationContinent, destinationCountry, seats
