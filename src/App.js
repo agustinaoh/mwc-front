@@ -3,12 +3,13 @@ import { HashRouter as Router, Routes, Route } from "react-router-dom";
 import Home from "./components/Home/Home";
 import Companies from "./components/Companies/Companies";
 import DataPage from "./components/DataPage/DataPage";
-import Header from "./components/Header/Header";
+import { Footer } from "./components/Footer/Footer";
+import { Navbar } from "./components/Navbar/Navbar";
 
 function App() {
   return (
-    <>
-      <Header />
+    <div className="flex flex-col h-full items-center justify-center">
+      <Navbar />
       <Router>
         <Routes>
           <Route path="/" element={<Home />}></Route>
@@ -16,7 +17,8 @@ function App() {
           <Route path="/data" element={<DataPage />}></Route>
         </Routes>
       </Router>
-    </>
+      <Footer />
+    </div>
   );
 }
 
