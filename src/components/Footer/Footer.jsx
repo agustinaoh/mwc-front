@@ -33,7 +33,7 @@ export const Footer = () => {
       |
       <a
         className="mx-2"
-        href="https://github.com/"
+        href="https://github.com/Mousemices"
         target={"_blank"}
         rel="noopener noreferrer"
       >
@@ -42,7 +42,7 @@ export const Footer = () => {
       |
       <a
         className="mx-2"
-        href="https://github.com/"
+        href="https://github.com/ocania"
         target={"_blank"}
         rel="noopener noreferrer"
       >
@@ -60,7 +60,7 @@ export const Footer = () => {
       |
       <a
         className="mx-2"
-        href="https://github.com/"
+        href="https://github.com/jcarbonellsilva"
         target={"_blank"}
         rel="noopener noreferrer"
       >

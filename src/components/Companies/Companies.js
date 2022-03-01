@@ -11,8 +11,8 @@ function Companies() {
 
   useEffect(() => {
     fetch("http://localhost:8000/company")
-      .then(res => res.json())
-      .then(data => setCompanies(data));
+      .then((res) => res.json())
+      .then((data) => setCompanies(data));
   }, []);
 
   const columns = useMemo(() => COLUMNS, []);
@@ -34,12 +34,21 @@ function Companies() {
             <FormNewFlight />
           </Modal>
         )}
-        <Table
-          columns={columns}
-          data={data}
-          handleNewCompany={setIsCompanyModalVisible}
-          handleNewFlight={setIsFlightModalVisible}
-        />
+
+        <Table columns={columns} data={data}>
+          <button
+            onClick={setIsCompanyModalVisible}
+            className="bg-teal-dark py-2 px-6 text-white hover:bg-teal-light mr-6"
+          >
+            Add new Company
+          </button>
+          <button
+            onClick={setIsFlightModalVisible}
+            className="bg-teal-dark py-2 px-6 text-white hover:bg-teal-light"
+          >
+            Add new Flight
+          </button>
+        </Table>
       </div>
     </>
   );

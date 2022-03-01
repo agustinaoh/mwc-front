@@ -15,7 +15,13 @@ import {
   FaChevronDown,
 } from "react-icons/fa";
 
-export const Table = ({ columns, data, handleNewCompany, handleNewFlight }) => {
+export const Table = ({
+  columns,
+  data,
+  handleNewCompany,
+  handleNewFlight,
+  children,
+}) => {
   const {
     getTableProps,
     getTableBodyProps,
@@ -54,18 +60,7 @@ export const Table = ({ columns, data, handleNewCompany, handleNewFlight }) => {
       <div className="mb-12 w-full">
         <div className="flex w-full justify-between">
           <div className="flex items-center justify-start">
-            <button
-              onClick={handleNewCompany}
-              className="bg-teal-dark py-2 px-6 text-white hover:bg-teal-light mr-6"
-            >
-              Add new Company
-            </button>
-            <button
-              onClick={handleNewFlight}
-              className="bg-teal-dark py-2 px-6 text-white hover:bg-teal-light"
-            >
-              Add new Flight
-            </button>
+            {children && children}
           </div>
           <GlobalFilter filter={globalFilter} setFilter={setGlobalFilter} />
         </div>
