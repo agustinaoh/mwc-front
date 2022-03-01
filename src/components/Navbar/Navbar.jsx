@@ -11,7 +11,6 @@ export const Navbar = () => {
           className="h-12"
         />
       </Link>
-
       <div className="uppercase font-bold text-teal-dark">
         <span className="mr-2">
           <Link to="/data">Data</Link>
