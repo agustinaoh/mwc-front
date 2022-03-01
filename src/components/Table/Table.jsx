@@ -10,7 +10,12 @@ import MOCK_DATA from "./helpers/MOCK_DATA.json";
 import { COLUMNS } from "./helpers/columns";
 import { GlobalFilter } from "./helpers/GlobalFilter";
 import "./Table.css";
-import { FaChevronLeft, FaChevronRight, FaChevronUp, FaChevronDown} from "react-icons/fa"
+import {
+  FaChevronLeft,
+  FaChevronRight,
+  FaChevronUp,
+  FaChevronDown,
+} from "react-icons/fa";
 
 export const Table = () => {
   const columns = useMemo(() => COLUMNS, []);
@@ -52,7 +57,12 @@ export const Table = () => {
 
   return (
     <>
-      <GlobalFilter filter={globalFilter} setFilter={setGlobalFilter} />
+      <div className="flex w-full justify-between">
+        <button className="bg-teal-dark py-2 px-6 text-white hover:bg-teal-light">
+          Add new
+        </button>
+        <GlobalFilter filter={globalFilter} setFilter={setGlobalFilter} />
+      </div>
 
       <table {...getTableProps()}>
         <thead>
@@ -62,7 +72,12 @@ export const Table = () => {
                 <th {...column.getHeaderProps(column.getSortByToggleProps())}>
                   {column.render("Header")}
                   <span>
-                    {column.isSorted && (column.isSortedDesc ? <FaChevronDown className="inline ml-2"/> : <FaChevronUp className="inline ml-2" />)}
+                    {column.isSorted &&
+                      (column.isSortedDesc ? (
+                        <FaChevronDown className="inline ml-2" />
+                      ) : (
+                        <FaChevronUp className="inline ml-2" />
+                      ))}
                   </span>
                 </th>
               ))}
@@ -76,9 +91,7 @@ export const Table = () => {
               <tr {...row.getRowProps()}>
                 {row.cells.map((cell) => {
                   return (
-                    <td {...cell.getCellProps()}>
-                      {cell.render("Cell")}
-                    </td>
+                    <td {...cell.getCellProps()}>{cell.render("Cell")}</td>
                   );
                 })}
               </tr>
