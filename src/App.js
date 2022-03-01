@@ -9,15 +9,15 @@ import { Navbar } from "./components/Navbar/Navbar";
 function App() {
   return (
     <div className="flex flex-col h-full items-center justify-center">
-      <Navbar />
       <Router>
+        <Navbar />
         <Routes>
           <Route path="/" element={<Home />}></Route>
           <Route path="/companies" element={<Companies />}></Route>
           <Route path="/data" element={<DataPage />}></Route>
         </Routes>
+        <Footer />
       </Router>
-      <Footer />
     </div>
   );
 }
