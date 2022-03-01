@@ -6,9 +6,9 @@ import {
   useGlobalFilter,
   useSortBy,
 } from "react-table";
-import MOCK_DATA from "./table-helpers/MOCK_DATA.json";
-import { COLUMNS } from "./table-helpers/columns";
-import { GlobalFilter } from "./table-helpers/GlobalFilter";
+import MOCK_DATA from "./helpers/MOCK_DATA.json";
+import { COLUMNS } from "./helpers/columns";
+import { GlobalFilter } from "./helpers/GlobalFilter";
 import "./Table.css";
 import { FaChevronLeft, FaChevronRight, FaChevronUp, FaChevronDown} from "react-icons/fa"
 

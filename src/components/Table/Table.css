@@ -28,11 +28,6 @@ tfoot td {
   display: block;
   text-align: center;
 }
-/* 
-thead {
-  position: sticky;
-  top: 44px;
-} */
 
 input {
   padding-left: 8px;
