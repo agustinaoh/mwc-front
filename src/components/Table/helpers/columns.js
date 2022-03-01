@@ -1,4 +1,4 @@
-export const COLUMNS = [
+export const COLUMNS_COMPANIES = [
   {
     Header: "Company",
     accessor: "name",

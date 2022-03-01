@@ -1,6 +1,6 @@
 import React, { useEffect, useMemo, useState } from "react";
 import { Table } from "../Table/Table";
-import { COLUMNS } from "./../Table/helpers/columns";
+import { COLUMNS_COMPANIES as COLUMNS } from "./../Table/helpers/columns";
 //import MOCK_DATA from "./../Table/helpers/MOCK_DATA.json";
 import { Modal } from "../Modal/Modal";
 import { FormNewCompany } from "./../FormCompany/FormNewCompany";
