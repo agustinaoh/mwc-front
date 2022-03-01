@@ -56,7 +56,7 @@ export const Table = () => {
   };
 
   return (
-    <>
+    <div className="mb-12">
       <div className="flex w-full justify-between">
         <button className="bg-teal-dark py-2 px-6 text-white hover:bg-teal-light">
           Add new
@@ -133,6 +133,6 @@ export const Table = () => {
           </button>
         </div>
       </div>
-    </>
+    </div>
   );
 };

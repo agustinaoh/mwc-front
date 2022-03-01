@@ -21,7 +21,7 @@ function App() {
       </Router>
 =======
       <Navbar />
-      <main className="w-full my-18 p-12">
+      <main className="w-full my-24 p-12 h-full">
         <Table />
       </main>
       <Footer />
