@@ -1,5 +1,7 @@
 import { Formik, Form, Field } from "formik";
 import { SchemaNewCompany } from "./SchemaNewCompany";
+
+import swal from 'sweetalert';
 import "./formNewCompany.css";
 
 const initialValues = {
@@ -17,6 +19,13 @@ export const FormNewCompany = () => {
         validationSchema={SchemaNewCompany}
         onSubmit={(values, { resetForm }) => {
           console.log(values);
+          resetForm();
+          swal({
+            title: 'Compañia añadido',
+            icon: 'success',
+            button: 'Aceptar',
+            timer: '2000'
+          })
         }}
       >
         {({ errors, touched }) => (
