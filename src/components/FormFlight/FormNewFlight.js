@@ -1,13 +1,14 @@
-import { Formik, Form, Field } from "formik";
+import { Formik, Form, Field } from "formik"
+import { useEffect, useState } from "react";
 import { Modal } from "../Modal/Modal";
 import { SchemaNewFlight } from "./SchemaFormFlight";
 
 const initialValues = {
-  nameCompany: "",
-  date: Date.now(),
-  // origenCountry: "",
-  // destinyCountry: "",
-  floats: 0,
+    nameCompany: "",
+    date: Date.now(),
+    origenCountry: [],
+    destinyCountry: [],
+    floats: 0
 };
 
 export const FormNewFlight = ({ handleClose }) => {
