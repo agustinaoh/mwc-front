@@ -1,0 +1,51 @@
+table {
+  border-collapse: collapse;
+  width: 100%;
+  background-color: var(--ocean-25);
+  margin-top: 44px;
+}
+
+table td,
+table th {
+  border-bottom: 2px solid var(--ocean-200);
+  padding: 8px;
+}
+
+table tr:nth-child(even) {
+  background-color: var(--ocean-50);
+}
+
+table tr:hover {
+  background-color: var(--ocean-100);
+}
+
+table th,
+tfoot td {
+  @apply text-teal-dark bg-teal-light bg-opacity-20 border-b-2 border-teal-dark font-bold uppercase py-4;
+}
+
+.center {
+  display: block;
+  text-align: center;
+}
+/* 
+thead {
+  position: sticky;
+  top: 44px;
+} */
+
+input {
+  padding-left: 8px;
+  margin-left: 8px;
+  border-radius: 0;
+  border-bottom: 1px solid var(--gray-900);
+}
+
+button {
+  @apply p-3;
+}
+
+button:disabled {
+  cursor: not-allowed;
+  @apply opacity-30;
+}
