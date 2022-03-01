@@ -8,8 +8,7 @@ import { Navbar } from "./components/Navbar/Navbar";
 
 function App() {
   return (
-    <div className="flex flex-col h-full items-center justify-center">
-<<<<<<< HEAD
+    <div className="flex flex-col h-full w-full items-center">
       <Router>
         <Navbar />
         <Routes>
@@ -19,13 +18,6 @@ function App() {
         </Routes>
         <Footer />
       </Router>
-=======
-      <Navbar />
-      <main className="w-full my-24 p-12 h-full">
-        <Table />
-      </main>
-      <Footer />
->>>>>>> 9f01255 (changed mock data, columns, style on table)
     </div>
   );
 }

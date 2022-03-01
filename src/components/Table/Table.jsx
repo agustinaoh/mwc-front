@@ -126,6 +126,6 @@ export const Table = ({ columns, data, onClick }) => {
           </div>
         </div>
       </div>
-    </div>
+    </>
   );
 };
