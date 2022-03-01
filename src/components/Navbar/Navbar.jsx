@@ -1,9 +1,5 @@
-<<<<<<< HEAD
-import React from 'react'
-import {Link} from "react-router-dom"
-=======
 import React from "react";
->>>>>>> 9f01255 (changed mock data, columns, style on table)
+import { Link } from "react-router-dom";
 
 export const Navbar = () => {
   return (
@@ -14,13 +10,12 @@ export const Navbar = () => {
         className="h-12"
       />
       <div className="uppercase font-bold text-teal-dark">
-<<<<<<< HEAD
-      <span className="mr-2"><Link to="/data">Data</Link></span>
-      <span><Link to="/companies">Companies</Link></span>
-=======
-        <span className="mr-2">Data</span>
-        <span>Companies</span>
->>>>>>> 9f01255 (changed mock data, columns, style on table)
+        <span className="mr-2">
+          <Link to="/data">Data</Link>
+        </span>
+        <span>
+          <Link to="/companies">Companies</Link>
+        </span>
       </div>
     </div>
   );
