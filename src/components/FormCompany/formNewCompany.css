@@ -1,20 +1,20 @@
 .errorForm {
-    background-color: #FDD1D1;
+  background-color: #fdd1d1;
 }
 
 .section-newForm {
-    background-color: #116B7D;
-    color: #FFFF;
-    width: 80%;
-    margin: auto;
+  margin: auto;
+  @apply bg-teal-dark w-full text-white;
 }
 
 .formNew {
-    display: grid;
-    gap: 20px;
-    padding: 20px;
+  display: grid;
+  gap: 20px;
+  padding: 20px 0;
 }
 
 .inputForm {
-    background-color: black;
+  background-color: white;
+  opacity: 20;
+  @apply text-black m-0 p-2;
 }
