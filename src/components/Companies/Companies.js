@@ -11,8 +11,8 @@ function Companies() {
 
   useEffect(() => {
     fetch("http://localhost:8000/company")
-      .then((res) => res.json())
-      .then((data) => setCompanies(data));
+      .then(res => res.json())
+      .then(data => setCompanies(data));
   }, []);
 
   const columns = useMemo(() => COLUMNS, []);
@@ -26,12 +26,12 @@ function Companies() {
       <div className="flex flex-col w-full justify-center p-12 my-20">
         {isCompanyModalVisible && (
           <Modal>
-            <FormNewCompany />
+            <FormNewCompany handleClose={() => setIsCompanyModalVisible(false)} />
           </Modal>
         )}
         {isFlightModalVisible && (
           <Modal>
-            <FormNewFlight />
+            <FormNewFlight handleClose={() => setIsFlightModalVisible(false)} />
           </Modal>
         )}
 
@@ -42,10 +42,7 @@ function Companies() {
           >
             Add new Company
           </button>
-          <button
-            onClick={setIsFlightModalVisible}
-            className="bg-teal-dark py-2 px-6 text-white hover:bg-teal-light"
-          >
+          <button onClick={setIsFlightModalVisible} className="bg-teal-dark py-2 px-6 text-white hover:bg-teal-light">
             Add new Flight
           </button>
         </Table>

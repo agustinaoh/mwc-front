@@ -1,10 +1,10 @@
 import React, { useMemo } from "react";
 import { Table } from "../Table/Table";
-import { COLUMNS } from "./../Table/helpers/columns";
+import { COLUMNS_DATA } from "./../Table/helpers/columns";
 import MOCK_DATA from "./../Table/helpers/MOCK_DATA.json"; //mocked // REPLACE
 
 function DataPage() {
-  const columns = useMemo(() => COLUMNS, []);
+  const columns = useMemo(() => COLUMNS_DATA, []);
   const data = useMemo(() => MOCK_DATA, []);
 
   return (
