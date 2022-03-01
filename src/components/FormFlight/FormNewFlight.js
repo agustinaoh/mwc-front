@@ -12,8 +12,9 @@ const initialValues = {
 
 export const FormNewFlight = () => {
   return (
-    <Modal>
-      <h2>INSERT A NEW COMPANY</h2>
+    <div className="p-8 z-20">
+      <h2>INSERT A NEW FLIGHT</h2>
+      <div className="h-2 w-12 bg-white mt-2 mb-4"></div>
       <Formik
         initialValues={initialValues}
         validationSchema={SchemaNewFlight}
@@ -45,17 +46,23 @@ export const FormNewFlight = () => {
               <div className="errorForm">{errors.floats}</div>
             ) : null}
 
-            <div>
-              <button type="reset" className="p-2">
+            <div className="w-full flex justify-between items-center">
+              <button
+                type="reset"
+                className="p-2 border-2 border-white w-full mr-2"
+              >
                 Cancel
               </button>
-              <button type="submit" className="p-2 bg-white text-teal-dark">
+              <button
+                type="submit"
+                className="p-2 bg-white border-2 border-white text-teal-dark uppercase w-full ml-2"
+              >
                 Accept
               </button>
             </div>
           </Form>
         )}
       </Formik>
-    </Modal>
+    </div>
   );
 };
