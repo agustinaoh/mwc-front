@@ -1,14 +1,22 @@
-import React, { useMemo, useState } from "react";
+import React, { useEffect, useMemo, useState } from "react";
 import { Table } from "../Table/Table";
 import { COLUMNS } from "./../Table/helpers/columns";
-import MOCK_DATA from "./../Table/helpers/MOCK_DATA.json";
+//import MOCK_DATA from "./../Table/helpers/MOCK_DATA.json";
 import { Modal } from "../Modal/Modal";
 import { FormNewCompany } from "./../FormCompany/FormNewCompany";
 import { FormNewFlight } from "./../FormFlight/FormNewFlight";
 
 function Companies() {
+  const [companies, setCompanies] = useState([]);
+
+  useEffect(() => {
+    fetch("http://localhost:8000/company")
+      .then(res => res.json())
+      .then(data => setCompanies(data));
+  }, []);
+
   const columns = useMemo(() => COLUMNS, []);
-  const data = useMemo(() => MOCK_DATA, []);
+  const data = useMemo(() => companies, [companies]);
 
   const [isCompanyModalVisible, setIsCompanyModalVisible] = useState(false);
   const [isFlightModalVisible, setIsFlightModalVisible] = useState(false);

@@ -1,0 +1,28 @@
+{
+    "company": [
+    {
+        "_id": "621e1bf19a",
+        "name": "Company01",
+        "website": "www.company01.com",
+        "totalFlights": 0,
+        "totalSeats": 0,
+        "__v": 0
+    },
+    {
+        "_id": "621e1bf19afd537340cff3ac",
+        "name": "Company02",
+        "website": "www.company02.com",
+        "totalFlights": 500,
+        "totalSeats": 50,
+        "__v": 0
+    },
+    {
+        "_id": "621e1bf19afd",
+        "name": "Company03",
+        "website": "www.company03.com",
+        "totalFlights": 100,
+        "totalSeats": 800,
+        "__v": 0
+    }
+    ]
+}
