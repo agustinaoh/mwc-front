@@ -2,8 +2,6 @@ import { Formik, Form, Field } from "formik";
 import { SchemaNewCompany } from "./SchemaNewCompany";
 import "./formNewCompany.css";
 
-import { Modal } from "../Modal/Modal";
-
 const initialValues = {
   name: "",
   website: "",
