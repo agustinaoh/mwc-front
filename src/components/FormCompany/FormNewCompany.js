@@ -21,17 +21,38 @@ export const FormNewCompany = ({ handleClose }) => {
       >
         {({ errors, touched }) => (
           <Form className="formNew">
-            <Field name="name" className="inputForm" placeholder="Name" autocomplete="off" />
-            {errors.name && touched.name ? <div className="errorForm">{errors.name}</div> : null}
+            <Field
+              name="name"
+              className="inputForm"
+              placeholder="Name"
+              autocomplete="off"
+            />
+            {errors.name && touched.name ? (
+              <div className="errorForm">{errors.name}</div>
+            ) : null}
 
-            <Field name="website" className="inputForm" placeholder="website" autocomplete="off" />
-            {errors.website && touched.website ? <div className="errorForm">{errors.website}</div> : null}
+            <Field
+              name="website"
+              className="inputForm"
+              placeholder="website"
+              autocomplete="off"
+            />
+            {errors.website && touched.website ? (
+              <div className="errorForm">{errors.website}</div>
+            ) : null}
 
             <div className="w-full flex justify-between items-center">
-              <button type="reset" className="p-2 border-2 border-white w-full mr-2" onClick={handleClose}>
+              <button
+                type="reset"
+                className="p-2 border-2 border-white w-full mr-2 uppercase font-bold"
+                onClick={handleClose}
+              >
                 Cancel
               </button>
-              <button type="submit" className="p-2 bg-white border-2 border-white text-teal-dark uppercase w-full ml-2">
+              <button
+                type="submit"
+                className="p-2 bg-white border-2 border-white text-teal-dark uppercase w-full ml-2 font-bold"
+              >
                 Accept
               </button>
             </div>

@@ -35,5 +35,4 @@ export const COLUMNS_DATA = [
     accessor: "totalFlights",
   },
 ];
-
 // company, date, originCountry, originContinent, destinationContinent, destinationCountry, seats
