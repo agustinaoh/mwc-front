@@ -4,9 +4,9 @@ export const SchemaNewFlight = Yup.object().shape({
   nameCompany: Yup.string()
     .min(3, "Too Short!")
     .max(50, "Too Long!")
-    .required("Required"),
-  date: Yup.string().required("Required"),
-  // origenCountry: Yup.string().required("Required"),
-  // destinyCountry: Yup.string().required("Required"),
+    .required("Required name company"),
+  date: Yup.string().default(() => new Date()).required("Required date"),
+  origenCountry: Yup.string().required("Required origen country"),
+  destinyCountry: Yup.string().required("Required destiny country"),
   floats: Yup.number()
 });

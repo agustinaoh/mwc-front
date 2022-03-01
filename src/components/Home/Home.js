@@ -1,3 +1,7 @@
+import { FormNewCompany } from "../FormCompany/FormNewCompany";
+import { FormNewFlight } from "../FormFlight/FormNewFlight";
+import { Modal } from "../Modal/Modal";
+
 function Home() {
   return (
     <>
