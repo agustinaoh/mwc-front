@@ -1,35 +1,19 @@
 export const COLUMNS = [
   {
-    Header: "ID",
-    accessor: "id",
-  },
-  {
     Header: "Company",
-    accessor: "company",
+    accessor: "name",
   },
   {
-    Header: "Date",
-    accessor: "first_name",
+    Header: "Website",
+    accessor: "website",
   },
   {
-    Header: "Origin Country",
-    accessor: "originCountry",
+    Header: "Total Seats",
+    accessor: "totalSeats",
   },
   {
-    Header: "Origin Continent",
-    accessor: "originContinent",
-  },
-  {
-    Header: "Destination Country",
-    accessor: "destinationCountry",
-  },
-  {
-    Header: "Destination Continent",
-    accessor: "destinationContinent",
-  },
-  {
-    Header: "Seats",
-    accessor: "seats",
+    Header: "Total Flights",
+    accessor: "totalFlights",
   },
 ];
 
